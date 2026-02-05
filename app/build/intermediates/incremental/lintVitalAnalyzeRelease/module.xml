@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/storage/emulated/0/B3/app"
+    name=":app"
+    type="APP"
+    maven="BatteryProtector:app:"
+    agpVersion="8.1.0"
+    buildFolder="build"
+    bootClassPath="/data/data/com.itsaky.androidide/files/home/android-sdk/platforms/android-34/android.jar:/data/data/com.itsaky.androidide/files/home/android-sdk/build-tools/33.0.1/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

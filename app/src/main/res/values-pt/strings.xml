@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Bypass Charging</string>
+    <string name="app_signature">Por Tava_Mon97</string>
+
+    <string name="title_bypass_charging">BYPASS CHARGING</string>
+    <string name="bypass_card_title">Corrente direta para o processador</string>
+    <string name="health_placeholder">Saúde: --%</string>
+    <string name="current_placeholder">Corrente: -- mA</string>
+
+    <string name="current_label">Corrente: %s</string>
+    <string name="health_label">Saúde: %1$d%% (%2$d mAh)</string>
+    <string name="current_empty">Corrente: --</string>
+    <string name="error_battery">Erro ao ler bateria</string>
+    <string name="tip_toast">Dica: Use o botão do Painel Rápido para ativar o Bypass!</string>
+    <string name="bypass_error_root">Erro: Comando Root falhou</string>
+
+    <string name="setup_title">Configuração Inicial</string>
+    <string name="perm_root_title">Acesso Root</string>
+    <string name="perm_root_desc">Necessário para modificar parâmetros de carga do Kernel.</string>
+    <string name="root_granted_title">Root Concedido!</string>
+    <string name="tutorial_desc">Para usar o Bypass confortavelmente, adicione o botão à sua barra de status:</string>
+    <string name="btn_open_panel">ABRIR PAINEL RÁPIDO</string>
+    <string name="btn_continue">Continuar para o App</string>
+    <string name="toast_requesting_root">Solicitando Root... O app fechará para aplicar alterações.</string>
+    <string name="toast_edit_panel">Edite seus botões e adicione \'Bypass\'!</string>
+    <string name="toast_manual_panel">Por favor, baixe a barra de notificações manualmente</string>
+
+    <string name="bypass_on">Bypass ON</string>
+    <string name="bypass_off">Bypass OFF</string>
+    <string name="bypass_activated">Bypass ATIVADO</string>
+    <string name="bypass_deactivated">Bypass DESACTIVADO</string>
+    <string name="tile_error_root">Erro: Falha no Root</string>
+
+    <string name="info_html"><![CDATA[
+        <b><font color="#FFFFFF">Detalhes Técnicos</font></b><br><br>
+        <b><font color="#FFFFFF">Descrição</font></b><br>
+        Bypass charging: Permite alimentar o dispositivo diretamente do carregador, ignorando a bateria.<br><br>
+        <b><font color="#69F0AE">Benefícios</font></b><br>
+        • <b>Gestão Térmica:</b> Reduz o calor.<br>
+        • <b>Vida Útil:</b> Evita ciclos de carga enquanto joga.<br>
+        • <b>Desempenho:</b> FPS mais estáveis evitando throttling.<br><br>
+        <b><font color="#FF8A80">Observação</font></b><br>
+        • <b>Hardware:</b> Requer PMIC e Kernel compatíveis.<br>
+        • <b>Imobilidade:</b> Deve estar conectado ao cabo.<br>
+        • <b>Carregador:</b> Protocolo PPS e mín. 15W recomendados.<br>
+        • <b>Corrente:</b> Ao ativar, ficará em torno de -20mA a 20mA.<br>
+        • <b>Bateria:</b> Se degradada, a % pode cair lentamente.<br>
+        • <b>Carga:</b> Ao desativar o Bypass, reconecte o cabo USB fisicamente para restaurar o fluxo de carga.
+    ]]></string>
+</resources>

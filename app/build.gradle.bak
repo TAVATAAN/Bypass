@@ -1,0 +1,74 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    namespace 'com.tavataan.bypass'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.tavataan.bypass"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.4"
+
+        ndk {
+            // Esto reduce el peso eliminando arquitecturas viejas (x86, etc)
+            abiFilters "arm64-v8a", "armeabi-v7a"
+        }
+    }
+
+    // --- AQUÍ ESTABA EL FALTANTE ---
+    // Debemos definir la firma antes de usarla en buildTypes
+        signingConfigs {
+        release {
+            storeFile file("mi_app.jks")
+            storePassword "Dragoncity"
+            keyAlias "mi_alias"
+            keyPassword "Dragoncity"
+            
+            // --- AGREGA ESTAS LÍNEAS PARA FORZAR V3 ---
+            v1SigningEnabled true
+            v2SigningEnabled true
+            enableV3Signing true  // <--- Esta es la clave para la protección V3
+            // ------------------------------------------
+        }
+    }
+    // -------------------------------
+    
+    buildTypes {
+        release {
+            // Ahora sí funcionará porque 'release' ya existe arriba
+            signingConfig signingConfigs.release
+            
+            // Esto reduce el peso eliminando código y recursos no usados
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "BypassCharging_v${variant.versionName}_${variant.buildType.name}.apk"
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+}

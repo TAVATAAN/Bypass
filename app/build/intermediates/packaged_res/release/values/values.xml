@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string name="app_name">Bypass Charging</string>
+    <string name="app_signature">By Tava_Mon97</string>
+    <string name="btn_continue">Continue to App</string>
+    <string name="btn_open_panel">OPEN QUICK PANEL</string>
+    <string name="bypass_activated">Bypass ACTIVATED</string>
+    <string name="bypass_card_title">Direct current to processor</string>
+    <string name="bypass_deactivated">Bypass DEACTIVATED</string>
+    <string name="bypass_error_root">Error: Root command failed</string>
+    <string name="bypass_off">Bypass OFF</string>
+    <string name="bypass_on">Bypass ON</string>
+    <string name="current_empty">Current: --</string>
+    <string name="current_label">Current: %s</string>
+    <string name="current_placeholder">Current: -- mA</string>
+    <string name="error_battery">Error reading battery</string>
+    <string name="health_label">Health: %1$d%% (%2$d mAh)</string>
+    <string name="health_placeholder">Health: --%</string>
+    <string name="info_html"><![CDATA[
+        <b><font color="#FFFFFF">Technical Details</font></b><br><br>
+        <b><font color="#FFFFFF">Description</font></b><br>
+        Bypass charging: Allows the device to be powered directly from the charger, bypassing the battery.<br><br>
+        <b><font color="#69F0AE">Benefits</font></b><br>
+        • <b>Thermal Mgmt:</b> Reduces heat.<br>
+        • <b>Lifespan:</b> Avoids charge cycles while gaming.<br>
+        • <b>Performance:</b> More stable FPS by avoiding throttling.<br><br>
+        <b><font color="#FF8A80">Observation</font></b><br>
+        • <b>Hardware:</b> Requires compatible PMIC and Kernel.<br>
+        • <b>Immobility:</b> Must be connected to the cable.<br>
+        • <b>Charger:</b> PPS protocol and min 15W recommended.<br>
+        • <b>Current:</b> When active, around -20mA to 20mA.<br>
+        • <b>Battery:</b> If degraded, % may drop slowly.<br>
+        • <b>Charging:</b> When disabling Bypass, reconnect USB cable physically to restore charging flow.
+    ]]></string>
+    <string name="perm_root_desc">Required to modify Kernel charging parameters.</string>
+    <string name="perm_root_title">Root Access</string>
+    <string name="root_granted_title">Root Granted!</string>
+    <string name="setup_title">Initial Setup</string>
+    <string name="tile_error_root">Error: Root Failed</string>
+    <string name="tip_toast">Tip: Use the Quick Settings Panel button to activate Bypass!</string>
+    <string name="title_bypass_charging">BYPASS CHARGING</string>
+    <string name="toast_edit_panel">Edit your buttons and add \'Bypass\'!</string>
+    <string name="toast_manual_panel">Please pull down the notification bar manually</string>
+    <string name="toast_requesting_root">Requesting Root... App will close to apply changes.</string>
+    <string name="tutorial_desc">To use Bypass comfortably, add the button to your status bar:</string>
+    <style name="Theme.BatteryProtector" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryVariant">#000000</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:navigationBarColor">#000000</item>
+        
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        
+        <item name="android:windowSplashScreenBackground" ns1:targetApi="31">#000000</item>
+        <item name="android:windowSplashScreenAnimatedIcon" ns1:targetApi="31">@drawable/ic_launcher_foreground</item>
+    </style>
+</resources>
