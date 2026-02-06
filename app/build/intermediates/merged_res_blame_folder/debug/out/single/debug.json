@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.tavataan.bypass.app-merged_res-4:/drawable_bg_glass_pill.xml.flat",
+        "source": "com.tavataan.bypass.app-main-6:/drawable/bg_glass_pill.xml"
+    },
+    {
+        "merged": "com.tavataan.bypass.app-merged_res-4:/drawable_fondo_anime.xml.flat",
+        "source": "com.tavataan.bypass.app-main-6:/drawable/fondo_anime.xml"
+    },
+    {
+        "merged": "com.tavataan.bypass.app-merged_res-4:/drawable_splash_background.xml.flat",
+        "source": "com.tavataan.bypass.app-main-6:/drawable/splash_background.xml"
+    },
+    {
+        "merged": "com.tavataan.bypass.app-merged_res-4:/drawable_ic_stat_bateria.xml.flat",
+        "source": "com.tavataan.bypass.app-main-6:/drawable/ic_stat_bateria.xml"
+    },
+    {
+        "merged": "com.tavataan.bypass.app-merged_res-4:/layout_activity_permissions.xml.flat",
+        "source": "com.tavataan.bypass.app-main-6:/layout/activity_permissions.xml"
+    },
+    {
+        "merged": "com.tavataan.bypass.app-merged_res-4:/layout_activity_main.xml.flat",
+        "source": "com.tavataan.bypass.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.tavataan.bypass.app-merged_res-4:/drawable_bg_glass_card.xml.flat",
+        "source": "com.tavataan.bypass.app-main-6:/drawable/bg_glass_card.xml"
+    },
+    {
+        "merged": "com.tavataan.bypass.app-merged_res-4:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.tavataan.bypass.app-main-6:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.tavataan.bypass.app-merged_res-4:/drawable_background_main_gradient.xml.flat",
+        "source": "com.tavataan.bypass.app-main-6:/drawable/background_main_gradient.xml"
+    },
+    {
+        "merged": "com.tavataan.bypass.app-merged_res-4:/drawable_icon.xml.flat",
+        "source": "com.tavataan.bypass.app-main-6:/drawable/icon.xml"
+    },
+    {
+        "merged": "com.tavataan.bypass.app-merged_res-4:/drawable_anime.jpg.flat",
+        "source": "com.tavataan.bypass.app-main-6:/drawable/anime.jpg"
+    },
+    {
+        "merged": "com.tavataan.bypass.app-merged_res-4:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.tavataan.bypass.app-main-6:/drawable/ic_launcher_background.xml"
+    }
+]
