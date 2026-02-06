@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="#121212"
+     android:gravity="center_vertical"
+     android:padding="32dp"
+     android:orientation="vertical">
+
+    <ImageView
+         android:layout_height="80dp"
+         android:layout_width="80dp"
+         android:src="@drawable/ic_stat_bateria"
+         android:contentDescription="Icon"
+         app:tint="#FFFFFF"
+         android:layout_gravity="center_horizontal" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginBottom="40dp"
+         android:textSize="24sp"
+         android:textColor="#FFFFFF"
+         android:layout_marginTop="24dp"
+         android:layout_gravity="center_horizontal"
+         android:text="@string/setup_title"
+         android:textStyle="bold" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center_vertical"
+         android:paddingVertical="12dp"
+         android:orientation="horizontal">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:textSize="18sp"
+             android:textColor="#E0E0E0"
+             android:layout_weight="1"
+             android:text="@string/perm_root_title"
+             android:textStyle="bold" />
+
+        <Switch
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:id="@+id/switch_permission_root" />
+
+    </LinearLayout>
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginBottom="30dp"
+         android:alpha="0.7"
+         android:textSize="14sp"
+         android:textColor="#B0B0B0"
+         android:text="@string/perm_root_desc" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:visibility="gone"
+         android:orientation="vertical"
+         android:id="@+id/layout_tutorial">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:paddingVertical="12dp"
+             android:orientation="horizontal">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:textSize="18sp"
+                 android:textColor="#E0E0E0"
+                 android:layout_weight="1"
+                 android:text="@string/btn_open_panel"
+                 android:textStyle="bold" />
+
+            <Switch
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:id="@+id/switch_open_panel" />
+
+        </LinearLayout>
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="16dp"
+             android:alpha="0.7"
+             android:textSize="14sp"
+             android:textColor="#B0B0B0"
+             android:text="@string/tutorial_desc" />
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:visibility="gone"
+             android:backgroundTint="#00000000"
+             android:textColor="#E0E0E0"
+             android:id="@+id/btn_continue"
+             android:text="@string/btn_continue"
+             android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
